@@ -57,9 +57,7 @@ fn main() -> Result<()> {
 
     match matches.subcommand() {
         Some(("signup", args)) => {
-            let provider = args
-                .value_of("provider")
-                .unwrap_or_else(|| DEFAULT_PROVIDER);
+            let provider = args.value_of("provider").unwrap_or(DEFAULT_PROVIDER);
             let api = get_provider(provider).context("The given provider is not supported.")?;
             api.signup()?;
         }
