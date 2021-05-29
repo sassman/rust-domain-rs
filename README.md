@@ -6,7 +6,7 @@
 
 ## What does `rust-domain` do?
 
-It helps your creating a `.rs` domain for your rust project from the shell.
+It helps you creating a `.rs` domain for your rust project from the shell.
 
 ## How does it work?
 
